@@ -1,12 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
 import 'package:trogon_task/config/colors.dart';
-import 'package:trogon_task/config/fonts.dart';
-import 'package:trogon_task/controller/controller/home_controller.dart';
 import 'package:trogon_task/controller/service/navigation_service.dart';
 import 'package:trogon_task/view/cast/cast_details.dart';
 import 'package:trogon_task/view/cast/widget/cast_tail.dart';
@@ -30,7 +26,7 @@ class _CastState extends State<Cast> {
   @override
   void initState() {
     controller.getCasteScreen(id: widget.id);
-    print(widget.id);
+ 
     super.initState();
   }
 
@@ -44,7 +40,7 @@ class _CastState extends State<Cast> {
           elevation: 0,
           leading: IconButton(
             onPressed: () {  Navigator.pop(context);},
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios,
               color: appaccuaBlue,
             ),

@@ -21,13 +21,7 @@ class Home extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final controller = Get.put(HomeController());
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-        //  CastService.getCastImpl();
-          // HomeService.getHomeImpl();
-          //  controller.getHomeScreen();
-        },
-      ),
+    
       backgroundColor: appBackground,
       appBar: AppBar(
         elevation: 0,
